@@ -1,0 +1,34 @@
+Diamond Price Prediction
+========================================================
+author: Weihua Shen
+date: Jan-26-2019 
+autosize: true
+
+Introduction
+========================================================
+Providing a reference for a reasonable pricing of diamond based on 4C (Cut, Color, Clarity, Carat) standards
+- Cut: quality of the diamond from best to worst (Ideal, Premium, Very Good, Good, Fair)
+- Color: best(D) to worst(J)
+- Clarity: measures how clear the diamond is from best to worst (IF, VVS2, VVS1, VS2, VS1, SI2, SI1, I1)
+
+This shiny app will predict diamond price based on your input of these factors
+
+Documentation
+========================================================
+Here is a summary of the "diamonds" dataset found in the ggplot2 R package. As you can see, the factors were measured in over 50,000 diamonds 
+```{r echo=FALSE}
+library(ggplot2)
+data(diamonds)
+str(diamonds[,c(1:4,7)])
+```
+
+Summary plot of the diamond data with each of the relevant variables plotted against each other
+========================================================
+```{r, echo=FALSE}
+plot(diamonds[,c(1:4,7)])
+```
+
+Links
+========================================================
+- shiny app: https://michelle-shenwh.shinyapps.io/Assignment9b/
+- source code: https://github.com/MichelleSHENWH/diamond-price-prediction
